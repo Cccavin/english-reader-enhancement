@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { VocabularyAnalyzer } from './utils/analyzer';
 import { useVocabulary } from './hooks/useVocabulary';
 import { useReadingSession } from './hooks/useReadingSession';
