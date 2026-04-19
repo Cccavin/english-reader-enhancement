@@ -19,6 +19,7 @@ interface ReadingReportProps {
 const ReadingReportView: React.FC<ReadingReportProps> = ({ 
   analysis, report, duration, onContinue 
 }) => {
+  const chapterInfo = `${analysis.chapterId} · ${analysis.totalWords}词`;
   const initialCoverage = report.initialCoverage * 100;
   const finalCoverage = report.finalCoverage * 100;
   const improvement = finalCoverage - initialCoverage;
@@ -42,9 +43,7 @@ const ReadingReportView: React.FC<ReadingReportProps> = ({
       <div style={{ textAlign: 'center', marginBottom: '24px' }}>
         <div style={{ fontSize: '48px', marginBottom: '8px' }}>📖</div>
         <h2 style={{ margin: '0', color: '#333' }}>阅读完成</h2>
-        <p style={{ color: '#666', margin: '8px 0 0 0' }}>
-          用时 {Math.floor(duration / 60)} 分 {duration % 60} 秒
-        </p>
+        <p style={{ color: '#666', margin: '8px 0 0 0', fontSize: '14px' }}>{chapterInfo} · 用时 {Math.floor(duration / 60)} 分 {duration % 60} 秒</p>
       </div>
 
       <div style={{ 
