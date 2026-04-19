@@ -12,7 +12,7 @@ const WordSpan: React.FC<WordSpanProps> = ({ word, isUnknown, onMarkWord, contex
   const spanRef = useRef<HTMLSpanElement>(null);
   const [showMenu, setShowMenu] = useState(false);
   const [menuPos, setMenuPos] = useState({ x: 0, y: 0 });
-  const longPressTimer = useRef<NodeJS.Timeout | null>(null);
+  const longPressTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [isPressed, setIsPressed] = useState(false);
 
   // 处理长按
