@@ -1,0 +1,39 @@
+{
+  "name": "english-reader-enhancement",
+  "version": "1.0.0",
+  "description": "英语阅读增强组件 - 基于Hu & Nation 98%覆盖率理论的生词标记系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "hammerjs": "^2.0.8",
+    "compromise": "^14.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/hammerjs": "^2.0.45",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "english-reading",
+    "vocabulary-coverage",
+    "language-learning",
+    "react-component"
+  ],
+  "author": "Lin Xiaoming",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/english-reader-enhancement"
+  }
+}
